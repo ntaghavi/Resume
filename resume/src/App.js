@@ -1,4 +1,5 @@
 import './App.css';
+import Navbar from './Navbar';
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
   const jobs = ['Front-end Developer' , 'AI Engineer'];
   return (
     <div className="App">
+      <Navbar/>
      <div className="content">
        <h1>{ title }</h1>
        <h3>{fname } {lname}</h3>
