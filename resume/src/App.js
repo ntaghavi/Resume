@@ -1,19 +1,17 @@
-import './App.css';
+
 import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
 
   const title = 'Welcome to my Resume!';
-  const fname = 'Nazanin', lname = 'Taghavi';
-  const jobs = ['Front-end Developer' , 'AI Engineer'];
+  // const fname = 'Nazanin', lname = 'Taghavi';
+  // const jobs = ['Front-end Developer' , 'AI Engineer'];
   return (
     <div className="App">
       <Navbar/>
+      <Home/>
      <div className="content">
-       <h1>{ title }</h1>
-       <h3>{fname } {lname}</h3>
-       <p>{jobs[0]} & {jobs[1]}</p>
-
      </div>
     </div>
   );
