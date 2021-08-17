@@ -47,3 +47,17 @@ code {
   margin: 40px auto;
   padding: 20px;
 }
+.skill-preview{
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.skill-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.skill-preview h2{
+  font-size: 20px;
+  color: #7d17b8;
+  margin-bottom: 3px;
+}

@@ -2,15 +2,22 @@ import { useState } from "react";
 
 const Home = () => {
     // let name = 'Nazanin';
-    const [name, setName] = useState('Nazanin');
-    const clickHandle = () =>{
-      setName('Taghavi');
-    }
+    const [skills, setskills] = useState(
+        [
+            {title: 'HTML', body: 'lorem ipsum ...', class: 'Front-end', id: 1},
+            {title: 'CSS', body: 'lorem ipsum ...', class: 'Front-end', id: 2},
+            {title: 'JS', body: 'lorem ipsum ...',class: 'Front-end', id: 3},
+            {title: 'React.JS', body: 'lorem ipsum ...',class: 'Front-end', id: 4}
+        ]
+    );
     return (  
         <div className="home">
-            <h2>Homepage</h2>
-            <p>{name}</p>
-            <button onClick={clickHandle}>Click me!</button>
+            {skills.map((skill) => (
+                <div className="skill-preview" key={skill.id}>
+                    <h2>{skill.title}</h2>
+                    <p>Skill Class: {skill.class}</p>
+                </div>
+            ))}
         </div>
     );
 }
