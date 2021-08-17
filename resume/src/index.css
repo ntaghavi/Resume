@@ -61,3 +61,14 @@ code {
   color: #7d17b8;
   margin-bottom: 3px;
 }
+.skill-sect{
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.intro{
+  margin-bottom: 50px;
+}
+.intro-text{
+  font-size: 18px;
+}

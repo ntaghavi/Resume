@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Introduction from "./Introduction";
 import SkillList from "./SkillList";
 
 const Home = () => {
@@ -13,14 +14,16 @@ const Home = () => {
             {title: 'Machine Learning', body: 'lorem ipsum ...', class: 'AI', id: 6},
             {title: 'Deep Learning', body: 'lorem ipsum ...',class: 'AI', id:7},
             {title: 'Data Mining', body: 'lorem ipsum ...',class: 'AI', id:8},
-            {title: 'SEO', body: 'lorem ipsum ...',class: 'Web Development', id: 9}
+            {title: 'SEO', body: 'lorem ipsum ...',class: 'Web Development', id: 9},
+            {title: 'Neural Networks', body: 'lorem ipsum ...',class: 'AI', id: 10}
         ]
     );
     return (  
         <div className="home">
-         <SkillList skills={skills.filter((skill)=>skill.class==='Web Development')} title="My Web Skills"/> 
-         <SkillList skills={skills.filter((skill)=>skill.class==='AI')} title="My AI Skills"/>   
-        </div>
+         <Introduction/>
+         <div className="skill-sect"><SkillList skills={skills.filter((skill)=>skill.class==='Web Development')} title="My Web Skills"/> </div>
+         <div className="skill-sect"><SkillList skills={skills.filter((skill)=>skill.class==='AI')} title="My AI Skills"/></div>
+         </div>
     );
 }
  
