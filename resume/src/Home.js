@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import Introduction from "./Introduction";
 import SkillList from "./SkillList";
 
@@ -18,6 +18,9 @@ const Home = () => {
             {title: 'Neural Networks', body: 'lorem ipsum ...',class: 'AI', id: 10}
         ]
     );
+    useEffect(() =>{
+        console.log('use effect');
+    });
     return (  
         <div className="home">
          <Introduction/>
