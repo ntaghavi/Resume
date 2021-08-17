@@ -18,14 +18,17 @@ const Home = () => {
             {title: 'Neural Networks', body: 'lorem ipsum ...',class: 'AI', id: 10}
         ]
     );
+    const [name, setName] = useState('mario');
     useEffect(() =>{
         console.log('use effect');
-    });
+    },[]);
     return (  
         <div className="home">
          <Introduction/>
          <div className="skill-sect"><SkillList skills={skills.filter((skill)=>skill.class==='Web Development')} title="My Web Skills"/> </div>
          <div className="skill-sect"><SkillList skills={skills.filter((skill)=>skill.class==='AI')} title="My AI Skills"/></div>
+         {/* <button onClick={()=> setName('luigi')}>change name</button>
+         <p>{name}</p> */}
          </div>
     );
 }
