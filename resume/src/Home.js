@@ -1,6 +1,6 @@
 const Home = () => {
     const clickHandle = () =>{
-        alert('Hello');
+        console.log('Hello');
     }
     return (  
         <div className="home">
