@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SkillList from "./SkillList";
 
 const Home = () => {
     // let name = 'Nazanin';
@@ -12,12 +13,7 @@ const Home = () => {
     );
     return (  
         <div className="home">
-            {skills.map((skill) => (
-                <div className="skill-preview" key={skill.id}>
-                    <h2>{skill.title}</h2>
-                    <p>Skill Class: {skill.class}</p>
-                </div>
-            ))}
+         <SkillList skills={skills} title="My Skills"/>   
         </div>
     );
 }
