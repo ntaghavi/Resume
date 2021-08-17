@@ -4,7 +4,11 @@ const Navbar = () => {
             <h1>Resume</h1>
             <div className="links">
                 <a href="/">Home</a>
-                <a href="/create">New Blog</a>
+                <a href="/create" style={{
+                    color: "white",
+                    backgroundColor: '#7d17b8',
+                    borderRadius: '8px'
+                }}>Personal Blog</a>
 
             </div>
         </nav>
